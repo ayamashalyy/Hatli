@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E875C96F2F2E8D67008F9488 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = E875C96E2F2E8D67008F9488 /* Core */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E875C9382F2E8437008F9488 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		E875C92A2F2E8436008F9488 /* Hatli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hatli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E875C9372F2E8437008F9488 /* HatliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E875C9412F2E8437008F9488 /* HatliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E875C96C2F2E8D44008F9488 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = ../Core; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E875C96F2F2E8D67008F9488 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +81,11 @@
 		E875C9212F2E8436008F9488 = {
 			isa = PBXGroup;
 			children = (
+				E875C96C2F2E8D44008F9488 /* Core */,
 				E875C92C2F2E8436008F9488 /* Hatli */,
 				E875C93A2F2E8437008F9488 /* HatliTests */,
 				E875C9442F2E8437008F9488 /* HatliUITests */,
+				E875C96D2F2E8D67008F9488 /* Frameworks */,
 				E875C92B2F2E8436008F9488 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				E875C9412F2E8437008F9488 /* HatliUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E875C96D2F2E8D67008F9488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +128,7 @@
 			);
 			name = Hatli;
 			packageProductDependencies = (
+				E875C96E2F2E8D67008F9488 /* Core */,
 			);
 			productName = Hatli;
 			productReference = E875C92A2F2E8436008F9488 /* Hatli.app */;
@@ -573,6 +589,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E875C96E2F2E8D67008F9488 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E875C9222F2E8436008F9488 /* Project object */;
 }
