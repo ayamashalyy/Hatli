@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E875C96F2F2E8D67008F9488 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = E875C96E2F2E8D67008F9488 /* Core */; };
+		E875C9D42F2E9238008F9488 /* SplashModule in Frameworks */ = {isa = PBXBuildFile; productRef = E875C9D32F2E9238008F9488 /* SplashModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		E875C9372F2E8437008F9488 /* HatliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E875C9412F2E8437008F9488 /* HatliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E875C96C2F2E8D44008F9488 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = ../Core; sourceTree = SOURCE_ROOT; };
+		E875C9D22F2E9226008F9488 /* SplashModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SplashModule; path = ../SplashModule; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -58,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E875C96F2F2E8D67008F9488 /* Core in Frameworks */,
+				E875C9D42F2E9238008F9488 /* SplashModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		E875C9212F2E8436008F9488 = {
 			isa = PBXGroup;
 			children = (
+				E875C9D22F2E9226008F9488 /* SplashModule */,
 				E875C96C2F2E8D44008F9488 /* Core */,
 				E875C92C2F2E8436008F9488 /* Hatli */,
 				E875C93A2F2E8437008F9488 /* HatliTests */,
@@ -129,6 +133,7 @@
 			name = Hatli;
 			packageProductDependencies = (
 				E875C96E2F2E8D67008F9488 /* Core */,
+				E875C9D32F2E9238008F9488 /* SplashModule */,
 			);
 			productName = Hatli;
 			productReference = E875C92A2F2E8436008F9488 /* Hatli.app */;
@@ -594,6 +599,10 @@
 		E875C96E2F2E8D67008F9488 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
+		};
+		E875C9D32F2E9238008F9488 /* SplashModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SplashModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
