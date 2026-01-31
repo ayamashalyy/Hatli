@@ -1,0 +1,20 @@
+# SwiftLint Configuration File for Modular Project
+
+# Files/folders to ignore
+excluded:
+  - Pods
+  - Carthage
+  - Generated
+  - Resources
+
+# Optional rules to enforce
+opt_in_rules:
+  - empty_count
+  - force_cast
+  - force_unwrapping
+
+# Line length for warnings
+line_length: 150
+
+# Reporter for Xcode
+reporter: "xcode"
