@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SplashModule
 
 @main
 struct HatliApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }

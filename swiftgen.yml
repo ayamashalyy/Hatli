@@ -1,0 +1,27 @@
+strings:
+  inputs:
+    - Core/Sources/Core/Resources/Localization/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: Core/Sources/Core/Generated/Strings+Generated.swift
+      params:
+        publicAccess: true # Set to true to make the generated code public
+
+xcassets:
+  inputs:
+    - Core/Sources/Core/Resources/Images.xcassets
+    - Core/Sources/Core/Resources/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: Core/Sources/Core/Generated/Assets+Generated.swift
+      params:
+        publicAccess: true # Set to true to make the generated code public
+
+
+
+
+
+
+
+
+

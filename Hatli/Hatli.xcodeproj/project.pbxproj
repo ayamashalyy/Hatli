@@ -122,6 +122,7 @@
 				E875C9272F2E8436008F9488 /* Frameworks */,
 				E875C9282F2E8436008F9488 /* Resources */,
 				E875C96B2F2E8958008F9488 /* SwiftLint */,
+				E875CA162F2EB3D1008F9488 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -272,6 +273,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nPROJECT_PATH=\"/Users/ayamashaly/Desktop/Hatli\"\n\nif command -v swiftlint >/dev/null 2>&1; then\n    swiftlint lint $(find \"$PROJECT_PATH\" -name \"*.swift\")\nelse\n    echo \"warning: 'swiftlint' command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+		E875CA162F2EB3D1008F9488 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == \"arm64\" ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nPROJECT_PATH=\"/Users/ayamashaly/Desktop/Hatli\"\n\nif ! command -v swiftgen >/dev/null 2>&1; then\n    echo \"warning: SwiftGen not installed. Download from https://github.com/SwiftGen/SwiftGen\"\n    exit 0\nfi\n\ncd \"$PROJECT_PATH\" || exit 1\nswiftgen config run --verbose\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
